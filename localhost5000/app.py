@@ -426,4 +426,6 @@ def select_day(driver, input_month, input_day):
             break
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 10000))
+    # 호스트를 '0.0.0.0'으로 설정하여 외부에서 접근 가능하도록 함
+    app.run(host='0.0.0.0', port=port)
