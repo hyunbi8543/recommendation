@@ -13,6 +13,7 @@ from collections import defaultdict
 import statistics
 from flask_cors import CORS 
 
+
 load_dotenv()
 
 app = Flask(__name__)
